@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.Activity.ListSongActivity"
+    android:background="@color/blackColor"
+    android:id="@+id/coordinator_layout">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/appbar_layout"
+        android:fitsSystemWindows="true">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsing_tool_bar"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:expandedTitleGravity="center|bottom"
+            app:expandedTitleMarginBottom="20dp">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_collapseMode="pin"
+                android:elevation="6dp"
+                android:id="@+id/song_list_toolbar"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:elevation="6dp"
+                android:id="@+id/song_list_icon_img"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@string/image_view"
+                app:layout_collapseMode="none"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/song_list_recycler"/>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:fabSize="normal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_baseline_play_circle_filled_24"
+        android:backgroundTint="@color/play_button_color"
+        android:id="@+id/play_all_btn"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="30dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

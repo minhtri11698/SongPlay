@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SongPlay</string>
+    <string name="top100">Top 100 bài hát</string>
+    <string name="xem_them">Xem thêm</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="various_artist">Various Artist</string>
+    <string name="main_album">Album hot</string>
+    <string name="more_btn">Button More</string>
+    <string name="music_type">Âm nhạc theo thể loại</string>
+    <string name="image_view">Image</string>
+    <string name="all_top_100">Tất cả Playlist</string>
+    <string name="all_album">Tất cả Album</string>
+    <string name="all_type">Tất cả thể loại</string>
+</resources>

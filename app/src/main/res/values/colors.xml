@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="toolbarColor">#2877f7</color>
+    <color name="blackColor">#000</color>
+    <color name="whiteColor">#fff</color>
+    <color name="titlecolor">#3cdafa</color>
+    <color name="play_button_color">#d40e00</color>
+</resources>
